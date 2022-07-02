@@ -1,0 +1,29 @@
+{
+    "name": "manjurulislam/coupon",
+    "description": "This will manage coupon",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1",
+        "../../vendor/laravel/framework": "^9.11"
+    },
+    "authors": [
+        {
+            "name": "Manjurul Islam",
+            "email": "mijony29@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Manjurulislam\\Coupon\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Manjurulislam\\Coupon\\CouponServiceProvider"
+            ]
+        }
+    }
+}
