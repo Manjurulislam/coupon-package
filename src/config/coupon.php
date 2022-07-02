@@ -9,6 +9,6 @@ return [
     'category_model'          => '\App\Models\CourseCategory',
     'category_primary_key'    => 'id',
     'category_display_column' => 'name',
-    'api_route_prefix'        => 'v1',
+    'api_route_prefix'        => 'api',
     'api_auth_middleware'     => ['auth:sanctum'],
 ];
