@@ -2,8 +2,10 @@
 
 namespace Manjurulislam\Coupon\Resource;
 
-use Manjurulislam\Coupon\Models\Coupon;
 
+
+
+use Manjurulislam\Coupon\Facades\Coupon;
 
 class CouponResource
 {

@@ -20,6 +20,8 @@ class CouponServiceProvider extends ServiceProvider
 
     public function register()
     {
-
+        $this->app->bind('coupon', function($app) {
+            return new CouponRepository();
+        });
     }
 }

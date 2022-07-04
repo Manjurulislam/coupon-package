@@ -23,7 +23,10 @@
         "laravel": {
             "providers": [
                 "Manjurulislam\\Coupon\\CouponServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Coupon": "Manjurulislam\\Coupon\\Facades\\Coupon"
+            }
         }
     }
 }
