@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('label');
             $table->string('code')->unique();
             $table->unsignedTinyInteger('coupon_applied_on')->default(1);
-            $table->unsignedBigInteger('course_category_id')->nullable();
+            $table->unsignedBigInteger('product_category_id')->nullable();
             $table->unsignedTinyInteger('discount_type')->default(1);
             $table->double('discount_amount');
             $table->dateTime('expire_date');
