@@ -53,7 +53,7 @@ class CouponController extends Controller
 
         try {
             $coupon = $this->couponService->createCoupon($request);
-            return $this->apiResponse->successResponse($this->couponResource->getCoupons($coupon));
+            return $this->apiResponse->successResponse($this->couponResource->getCoupon($coupon));
         } catch (Exception $e) {
             Log::error('Exception coupon create', [$e->getMessage()]);
             return $this->apiResponse->errorResponse('Something went wrong');

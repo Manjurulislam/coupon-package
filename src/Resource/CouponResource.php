@@ -1,10 +1,6 @@
 <?php
 
 namespace Manjurulislam\Coupon\Resource;
-
-
-
-
 use Manjurulislam\Coupon\Facades\Coupon;
 
 class CouponResource
