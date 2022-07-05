@@ -68,7 +68,7 @@ class CouponController extends Controller
         }
 
         try {
-            return $this->apiResponse->successResponse($this->couponResource->getCoupons($coupon));
+            return $this->apiResponse->successResponse($this->couponResource->getCoupon($coupon));
         } catch (Exception $e) {
             Log::error('Exception coupon details', [$e->getMessage()]);
             return $this->apiResponse->errorResponse('Something went wrong');
@@ -88,7 +88,7 @@ class CouponController extends Controller
 
         try {
             $coupon = $this->couponService->updateCoupon($request, $coupon);
-            return $this->apiResponse->successResponse($this->couponResource->getCoupons($coupon));
+            return $this->apiResponse->successResponse($this->couponResource->getCoupon($coupon));
         } catch (Exception $e) {
             Log::error('Exception coupon update', [$e->getMessage()]);
             return $this->apiResponse->errorResponse('Something went wrong');
